@@ -1,0 +1,45 @@
+input{
+    display: block;
+    width: 25%;
+    margin-left: 37.5%;
+    text-align: center;
+}
+.error{
+    font-weight: bold;
+    color: salmon;
+}
+#input_key{
+    display: block;
+}
+#button{
+    margin-top: 5%;
+}
+#title{
+    font-weight: bold;
+}
+#registrationform{
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    background-color: whitesmoke;
+    width: 50vw;
+    padding: 40px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 767px){
+    input{
+        width: auto;
+        margin: auto;
+    }
+    #button{
+        margin-top: 10%;
+    }
+    #registrationform{
+        width: 70vw;
+        top: 40%;
+        padding: 20px 40px;
+    }
+}

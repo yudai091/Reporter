@@ -1,0 +1,11 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    background-color: slategrey;
+}
+#rights{
+    color: #FFF;
+    font-size: small;
+}

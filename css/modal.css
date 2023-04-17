@@ -1,0 +1,48 @@
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+}
+.modal_del{
+    width: 100%;
+}
+.modal input{
+    margin-top: 10%;
+}
+.modal a{
+    text-decoration: none;
+}
+.modal_content{
+    position: absolute;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    text-align: center;
+    padding: 40px;
+    width: 30vw;
+}
+.for_register{
+    transform: translate(90%, 105%);
+}
+.for_register_u, .for_register_l{
+    transform: translate(45%, 120%);
+}
+.for_del{
+    width: 20%;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+@media only screen and (max-width: 767px){
+    .modal_content{
+        width: 50vw;
+    }
+    .for_register, .for_register_u, .for_register_l{
+        transform: translate(20%, 100%);
+    }
+    .for_del{
+        top: 30%;
+        left: 10%;
+    }
+}

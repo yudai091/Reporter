@@ -1,0 +1,79 @@
+.content{
+    background-color: whitesmoke;
+    width: 70vw;
+    margin: 10% auto;
+    padding: 40px;
+}
+.flex{
+    display: flex;
+    height: 50%;
+    justify-content: center;
+}
+.login_attension{
+    margin-left: 5%;
+}
+.login_attension p{
+    border-bottom: 1px solid #B7B7B7;
+    padding-top: 3%;
+}
+.login_form input{
+    height: 30px;
+    width: 20vw;
+    border-radius: 4px;
+}
+#error{
+    text-align: center;
+    font-weight: bold;
+    color: salmon;
+}
+#title{
+    font-weight: bold;
+    padding-left: 5%;
+}
+.input_tologin{
+    border: 1px solid #B7B7B7;
+    text-align: center;
+}
+#button{
+    margin-top: 10%;
+    width: 10vw;
+}
+
+@media only screen and (max-width: 767px){
+    li{
+        font-size: 70%;
+        margin-bottom: 2%;
+        margin-right: 10%;
+    }
+    .login_attension p{
+        border-top: 1px solid #B7B7B7;
+        border-bottom: unset;
+    }
+    .content{
+        text-align: center;
+        display: contents;
+        position: relative;
+        width: auto;
+    }
+    .login_form input{
+        width: 70vw;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    #registrationform{
+        margin-top: 12%;
+        position: fixed;
+        background-color: whitesmoke;
+        width: 100vw;
+        height: 90vh;
+    }
+    #button{
+        width: 40vw;
+        margin-top: 5%;
+    }
+    #title{
+        font-weight: bold;
+        padding-top: 5%;
+    }
+}

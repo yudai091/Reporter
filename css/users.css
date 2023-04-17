@@ -1,0 +1,47 @@
+li{
+    list-style: none;
+}
+.user_content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 33%;
+    z-index: -1;
+}
+.user{
+    display: inline-block;
+    background-color: #def;
+    border: 1px solid gray;
+    margin-bottom: 3%;
+    padding: 10px;
+    width: 35vw;
+}
+.indiv_rep{
+    display: block;
+    margin: 5% 73% 0;
+}
+#usr_a{
+    text-decoration: unset;
+}
+.user:nth-child(6n+1){
+    margin-top: 20%;
+}
+.about{
+    display: block;
+}
+#name{
+    font-size: 150%;
+    text-decoration: underline solid black;
+}
+
+@media only screen and (max-width: 767px){
+    .user_content{
+        margin: 0 2%;
+    }
+    .user{
+        margin-top: 5%;
+        width: 90vw;
+    }
+    .user:nth-child(4n+1){
+        margin-top: 20%;
+    }
+}

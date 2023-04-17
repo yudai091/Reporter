@@ -1,0 +1,280 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+.user_info{
+    background-color: rgb(245, 244, 244);
+}
+.user_info p{
+    margin-left: 80%;
+}
+#today_datepc{
+    margin-top: 0;
+    padding-top: 1%;
+}
+#user_namepc{
+    margin-bottom: 0;
+    padding-bottom: 1%;
+}
+#today_datesp{
+    display: none
+}
+#user_namesp{
+    display: none;
+}
+#nav-content{
+    background-color: #7080902e;
+    position: fixed;
+    width: 100vw;
+}
+.menu_index{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #fff4f5;
+}
+.menu_index li a{
+    display: inline-block;
+    width: 5em;
+    text-indent: -500em;
+    line-height: 5em;
+    text-align: center;
+    color: #ff5c62;
+    background: #fff4f5;
+    position: relative;
+    border-bottom: 1px solid #ffe2e3;
+    transition: background 0.3s ease-in-out;
+}
+.menu_index li a:before, .menu_index li a:after{
+    font-family: FontAwesome;
+    text-indent: 0em;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1.4em;
+}
+.menu_index li a:before{
+    top: 0;
+}
+.menu_index li a:after{
+    top: 30%;
+}
+.menu_index li a.mypage:before{
+    content: "\f015";
+}
+.menu_index li a.list:before{
+    content: "\f086";
+}
+.menu_index li a.admi_user:before{
+    content: "\f0c0";
+}
+.menu_index li a.register_user:before{
+    content: "\f023 \f234";
+}
+.menu_index li a.register_leader:before{
+    content: "\f023 \f21b";
+}
+.menu_index li a.psw:before{
+    content: "\f013";
+}
+.menu_index li a.logout:before{
+    content: "\f2f5";
+}
+
+.menu_index li a:hover{
+    background: #ff5c62;
+    color: #fff;
+}
+
+.menu_index li.current a{
+    background: #ff5e5e;
+    color: #fff;
+}
+
+.menu_index li a.active{
+    background: #ff5e5e;
+    color: #fff;
+}
+
+.menu_index li a.active:after{
+    position: absolute;
+    left: 5em;
+    top: 0;
+    content: "";
+    border: 2.5em solid transparent;
+    border-left-color: #ff5c62;
+    border-width: 2.5em 1em
+}
+.menu_index li:after{
+    content: attr(title);
+    position: absolute;
+    left: 5em;
+    height: 5em;
+    width: 13em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    background: #ff5c62;
+    padding: 2em;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+.menu_index li:hover:after{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 767px){
+    .user_info{
+        width: 100vw;
+    }
+    .user_info p{
+        text-align: center;
+        margin-left: 0;
+    }
+    #today_datepc{
+        display: none;
+    }
+    #user_namepc{
+        display: none;
+    }
+    #today_datesp{
+        display: block;
+        margin-top: 0;
+        padding-top: 5%;
+    }
+    #user_namesp{
+        display: block;
+        margin-bottom: 0;
+        padding-bottom: 3%;
+    }
+    .menu_index{
+        border-top: 2px solid salmon;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        padding: 0 15%;
+        overflow: auto;
+    }
+    .menu_index li{
+        position: relative;
+    }
+    .menu_index li a:before, .menu_index li a:after{
+        font-size: 0.7em;
+    }
+    .menu_index li:after{
+        display: none;
+    }
+    .menu_index li a.mypage:before{
+        content: "\f015";
+    }
+    .menu_index li a.mypage:after{
+        content: "マイページ";
+    }
+    .menu_index li a.list:before{
+        content: "\f086";
+    }
+    .menu_index li a.list:after{
+        content: "報告一覧";
+    }
+    .menu_index li a.admi_user:before{
+        content: "\f0c0";
+    }
+    .menu_index li a.admi_user:after{
+        content: "ユーザー一覧";
+    }
+    .menu_index li a.register_user:before{
+        content: "\f023 \f234";
+    }
+    .menu_index li a.register_user:after{
+        content: "ユーザー登録";
+    }
+    .menu_index li a.register_leader:before{
+        content: "\f023 \f21b";
+    }
+    .menu_index li a.register_leader:after{
+        content: "管理者登録";
+    }
+    .menu_index li a.psw:before{
+        content: "\f013";
+    }
+    .menu_index li a.psw:after{
+        content: "パスワード変更";
+    }
+    .menu_index li a.logout:before{
+        content: "\f2f5";
+    }
+    .menu_index li a.logout:after{
+        content: "ログアウト";
+    }
+    #nav-open{
+        width: 30px;
+        vertical-align: middle;
+        margin-left: 3%;
+    }
+    #nav-open span, #nav-open span:before, #nav-open span:after{
+        transition: all 0.4s;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background: #fff;
+        display: block;
+        content: '';
+        cursor: pointer;
+        z-index: 9999;
+    }
+    #nav-open span{
+        position: fixed;
+        margin-top: 3%;
+    }
+    #nav-open span:before{
+        margin: 30% 0 20% 0;
+    }
+    #nav-content{
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transition: .2s ease-in-out;
+    }
+    #nav-content.open{
+        z-index: 100;
+        background: #fff4f5;
+    }
+    #nav-content.open:before{
+        content: '';
+        overflow: hidden;
+        -webkit-filter: blur(10px);
+        -moz-filter: blur(10px);
+        -o-filter: blur(10px);
+        -ms-filter: blur(10px);
+        filter: blur(10px);
+        z-index: -1;
+    }
+    .hamburger-top{
+        height: 30px;/*×ボタンと被らないように*/
+    }
+    #nav-open.active span{
+        -webkit-transform: translateY(8px) rotate(-45deg);
+        transform: translateY(8px) rotate(-45deg);
+        background-color: #888;
+    }
+    #nav-open.active span:before{
+        -webkit-transform: translateY(-8px) rotate(45deg);/*打ち消す*/
+        transform: translateY(-8px) rotate(45deg);/*打ち消す*/
+        opacity: 0;
+    }
+    #nav-open.active span:after{
+        -webkit-transform: translateY(-16px) rotate(45deg);
+        transform: translateY(-16px) rotate(90deg);
+        background-color: #888;
+    }
+}
+@media only screen and ((max-width: 1150px) and (min-width: 767px)){}

@@ -1,0 +1,38 @@
+.pagination-container{
+    position: absolute;
+    z-index: -1;
+}
+.pagination {
+    width: 94vw;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+.pagination li {
+    margin: 5px;
+    border: 1px solid skyblue;
+    padding: 0 1%;
+}
+.pagination a {
+    display: block;
+    text-decoration: none;
+    color: skyblue;
+    padding: 10px;
+}
+.pagination li:hover {
+    background-color: rgb(106, 200, 237);
+}
+.pagination a:hover{
+    color: white;
+}
+.active {
+    background-color: rgb(106, 200, 237, 0.4);
+}
+
+@media only screen and (max-width: 767px){
+    .pagination{
+        width: 80vw;
+        padding-bottom: 15%;
+    }
+}

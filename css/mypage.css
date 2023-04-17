@@ -1,0 +1,38 @@
+textarea{
+    width: 100%;
+    resize: none;
+}
+.edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 50%;
+    padding: 10px;
+    margin-top: 50%;
+    position: fixed;
+    z-index: -1;
+}
+textarea{
+    border:1px solid #FF9696;
+}
+textarea:focus {
+    border:2px solid #FF9696;
+    outline:0;
+}
+#title, #about{
+    display: inline-block;
+}
+#report_btn{
+    display: block;
+}
+@media only screen and (max-width: 767px){
+    textarea{
+        width: 98%;
+    }
+    .content{
+        width: auto;
+        margin-top: 135%;
+    }
+}

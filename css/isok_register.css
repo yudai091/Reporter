@@ -1,0 +1,34 @@
+input{
+    margin-top: 3%;
+}
+#list{
+    display: inline-block;
+    border: 2px solid coral;
+    padding: 2px 8px;
+}
+#about{
+    margin-top: -1%;
+    margin-bottom: -.5%;
+}
+#registrationform{
+    text-align: center;
+    background-color: whitesmoke;
+    width: 70vw;
+    margin: 10% auto;
+    padding: 40px;
+}
+#register{
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    border: 1px solid #898989;
+}
+
+@media only screen and (max-width: 767px){
+    #registrationform{
+        width: 100vw;
+        padding: 10% 0;
+        margin: 0;
+    }
+}
